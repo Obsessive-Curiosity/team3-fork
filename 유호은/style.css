@@ -162,3 +162,9 @@ footer {
 #commentContainer {
     padding: 0 10px;
 }
+
+#myImg {
+    width: 100%;
+    height: auto;
+    display: none;
+}
