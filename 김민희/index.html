@@ -10,45 +10,53 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 class="title">^･-･^੭</h1>
+  <header>
+    <h1 id="title">^･-･^੭</h1>
+    <!-- <span id="clickInfo">click! ↑</span> -->
+  </header>
   <main>
-    <section class="section">
-      <div class="section-title">😎 Profile</div>
-      <div class="wrap">
+    <section id="profile-section" class="section">
+      <div class="section-header">
+        <div class="section-title">😎 Profile</div>
+        <button id="profile-toggle-btn" class="toggle-btn">
+          <img src="img/triangle.png" alt="triangle" >
+        </button>
+      </div>
+      <div class="wrap hidden">
         <div class="contents">
-          <div>
+          <div id="myName">
             <h3 class="bold">Name</h3>
             <hr>
             <p>김민희</p>
           </div>
-          <div>
+          <div id="myMbti">
             <h3 class="bold">MBTI</h3>
             <hr>
             <p>INFP</p>
           </div>
-          <div>
+          <div id="myHobby">
             <h3 class="bold">Hobby</h3>
             <hr>
             <p>요즘에는 미드 프렌즈 정주행하고 있습니당</p>
           </div>
         </div>
         <div class="contents">
-          <div>
+          <div id="musicILove">
             <h3 class="bold">Music I Love</h3>
             <hr>
             <p>Taylor Swift의<br> Cruel Summer</p>
           </div>
-          <div>
+          <div id="moviesILove">
             <h3 class="bold">Movies I Love</h3>
             <hr>
             <p>인터스텔라, 곡성</p>
           </div>
-          <div>
+          <div id="FoodsILove">
             <h3 class="bold">Foods I Love</h3>
             <hr>
             <p>샤브샤브</p>
           </div>
-          <div>
+          <div id="foodsIDislike">
             <h3 class="bold">Foods I Dislike</h3>
             <hr>
             <p>커피</p>
@@ -56,16 +64,20 @@
         </div>
       </div>
     </section>
-    <section class="section">
-      <div class="section-title">💬 인사말</div>
-      <div class="wrap">
-        <div class="profile-contents">
-          <div>
-            <p>웹 개발 어렵지만 열심히 배워보겠습니다~~ 풀스택 5기 화이팅!</p>
-          </div>
+    <section id="hello-section" class="section">
+      <div class="section-header">
+        <div class="section-title">💬 인사말</div>
+        <button id="hello-toggle-btn" class="toggle-btn">
+          <img src="img/triangle.png" alt="triangle" >
+        </button>
+      </div>
+      <div class="wrap hidden">
+        <div>
+          <p>웹 개발 어렵지만 열심히 배워보겠습니다~~ 풀스택 5기 화이팅!</p>
         </div>
       </div>
     </section>
   </main>
+  <script src="index.js"></script>
 </body>
 </html>
