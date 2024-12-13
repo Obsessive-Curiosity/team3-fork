@@ -60,11 +60,21 @@ main {
     gap: 10px;
 }
 
-.cardTop {
+.cardMid {
+    border-bottom: 1px solid #8B5DFF;
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+#infoBtn {
     color: #6A42C2;
     font-size: 2rem;
     font-weight: 400;
-    border-bottom: 1px solid #8B5DFF;
+    border: 1px solid #8B5DFF;
+    border-radius: 8px;
 }
 
 .description {
