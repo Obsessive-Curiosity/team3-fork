@@ -1,7 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
     const profileImg = document.querySelector(".profile-image");
     const profileInfo = document.querySelector(".profile-info");
-  
+    const bestPlaylist = document.querySelector(".best-playlist"); 
+    const playlist = document.querySelector(".playlist"); 
+    const bestmovie = document.querySelector(".best-movie"); 
+    const movie = document.querySelector(".movie"); 
+    const bestmenu = document.querySelector(".best-menu"); 
+    const menu = document.querySelector(".menu"); 
+    const besthobby = document.querySelector(".best-hobby"); 
+    const hobby = document.querySelector(".hobby"); 
+    const mytmi = document.querySelector(".my-tmi"); 
+    const tmi = document.querySelector(".tmi"); 
+
     profileImg.addEventListener("mouseover", function(event) {
         profileInfo.style.display = "block"; 
     });
@@ -9,26 +19,14 @@ document.addEventListener("DOMContentLoaded", function() {
     profileImg.addEventListener("mouseout", function(event) {
         profileInfo.style.display = "none";
     });
-});
 
-
-document.addEventListener("DOMContentLoaded", function() {
-    const bestPlaylist = document.querySelector(".best-playlist"); 
-    const playlist = document.querySelector(".playlist"); 
-  
     bestPlaylist.addEventListener("mouseenter", function(event) {
-      playlist.style.display = "block"; 
-    });
-  
+        playlist.style.display = "block"; 
+      });
+    
     bestPlaylist.addEventListener("mouseleave", function(event) {
-      playlist.style.display = "none"; 
-    });
-});
-
-  
-document.addEventListener("DOMContentLoaded", function() {
-    const bestmovie = document.querySelector(".best-movie"); 
-    const movie = document.querySelector(".movie"); 
+        playlist.style.display = "none"; 
+      });
 
     bestmovie.addEventListener("mouseover", function(event) {
         movie.style.display = "block"; 
@@ -37,12 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
     bestmovie.addEventListener("mouseout", function(event) {
         movie.style.display = "none"; 
     });
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    const bestmenu = document.querySelector(".best-menu"); 
-    const menu = document.querySelector(".menu"); 
-
+    
     bestmenu.addEventListener("mouseover", function(event) {
         menu.style.display = "block"; 
     });
@@ -50,13 +43,6 @@ document.addEventListener("DOMContentLoaded", function() {
     bestmenu.addEventListener("mouseout", function(event) {
         menu.style.display = "none"; 
     });
-});
-
-
-document.addEventListener("DOMContentLoaded", function() {
-    const besthobby = document.querySelector(".best-hobby"); 
-    const hobby = document.querySelector(".hobby"); 
-
     besthobby.addEventListener("mouseover", function(event) {
         hobby.style.display = "block"; 
     });
@@ -64,12 +50,6 @@ document.addEventListener("DOMContentLoaded", function() {
     besthobby.addEventListener("mouseout", function(event) {
         hobby.style.display = "none"; 
     });
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    const mytmi = document.querySelector(".my-tmi"); 
-    const tmi = document.querySelector(".tmi"); 
-
     mytmi.addEventListener("mouseover", function(event) {
         tmi.style.display = "block"; 
     });
@@ -78,3 +58,4 @@ document.addEventListener("DOMContentLoaded", function() {
         tmi.style.display = "none"; 
     });
 });
+
