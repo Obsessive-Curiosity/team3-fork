@@ -12,49 +12,49 @@ document.addEventListener("DOMContentLoaded", function() {
     const mytmi = document.querySelector(".my-tmi"); 
     const tmi = document.querySelector(".tmi"); 
 
-    profileImg.addEventListener("mouseover", function(event) {
+    profileImg.addEventListener("mouseover", function() {
         profileInfo.style.display = "block"; 
     });
 
-    profileImg.addEventListener("mouseout", function(event) {
+    profileImg.addEventListener("mouseout", function() {
         profileInfo.style.display = "none";
     });
 
-    bestPlaylist.addEventListener("mouseenter", function(event) {
+    bestPlaylist.addEventListener("mouseenter", function() {
         playlist.style.display = "block"; 
       });
     
-    bestPlaylist.addEventListener("mouseleave", function(event) {
+    bestPlaylist.addEventListener("mouseleave", function() {
         playlist.style.display = "none"; 
       });
 
-    bestmovie.addEventListener("mouseover", function(event) {
+    bestmovie.addEventListener("mouseover", function() {
         movie.style.display = "block"; 
     });
 
-    bestmovie.addEventListener("mouseout", function(event) {
+    bestmovie.addEventListener("mouseout", function() {
         movie.style.display = "none"; 
     });
     
-    bestmenu.addEventListener("mouseover", function(event) {
+    bestmenu.addEventListener("mouseover", function() {
         menu.style.display = "block"; 
     });
 
-    bestmenu.addEventListener("mouseout", function(event) {
+    bestmenu.addEventListener("mouseout", function() {
         menu.style.display = "none"; 
     });
-    besthobby.addEventListener("mouseover", function(event) {
+    besthobby.addEventListener("mouseover", function() {
         hobby.style.display = "block"; 
     });
 
-    besthobby.addEventListener("mouseout", function(event) {
+    besthobby.addEventListener("mouseout", function() {
         hobby.style.display = "none"; 
     });
-    mytmi.addEventListener("mouseover", function(event) {
+    mytmi.addEventListener("mouseover", function() {
         tmi.style.display = "block"; 
     });
 
-    mytmi.addEventListener("mouseout", function(event) {
+    mytmi.addEventListener("mouseout", function() {
         tmi.style.display = "none"; 
     });
 });
