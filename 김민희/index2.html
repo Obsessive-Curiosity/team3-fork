@@ -8,15 +8,20 @@
 </head>
 <body>
   <header>
-    m i n h e e
+    <div id="title">
+      m i n h e e
+    </div>
+    <button id="mode-switch">
+      light mode
+    </button>
   </header>
   <main id="main">
     <div id="wrap">
       <div id="profile" class="section">
-        <div id="profile-header" class="section-header">
+        <div class="section-header">
           profile
         </div>
-        <div id="profile-contents" class="contents">
+        <div class="contents">
           <div id="name" class="text-content">
             <div class="label">‣ name</div>
             <div class="value"> kim minhee</div>
@@ -27,38 +32,38 @@
           </div>
           <div id="blog" class="text-content">
             <span class="label">‣ blog </span>
-            <span>velog.io/@smnhree</span>
+            <a class="active" href="https://velog.io/@smnhree" target="_blank">miniverse.log</a>
           </div>
-          <div id="blog" class="text-content">
+          <div id="skill" class="text-content">
             <span class="label">‣ skill </span>
             <span>html, css, javascript</span>
           </div>
         </div>
       </div>
-      <div id="contents-2" class="section">
-        <div id="contents-2-header" class="section-header">
+      <div id="portfolios" class="section">
+        <div class="section-header">
           portfolio
         </div>
-        <div id="portfolios">
-          <div class="portfolio">
+        <div class="contents">
+          <a class="portfolio active" href='https://panda-market-mhkim.netlify.app/' target="_blank">
             <span>panda market</span>
-          </div>
-          <div class="portfolio">
+          </a>
+          <a class="portfolio">
             <span>xx</span>
-          </div>
-          <div class="portfolio">
+          </a>
+          <a class="portfolio">
             <span>xx</span>
-          </div>
-          <div class="portfolio">
+          </a>
+          <a class="portfolio">
             <span>xx</span>
-          </div>
+          </a>
         </div>
       </div>
-      <div id="contents-3" class="section">
-        <div id="contents-3-header" class="section-header">
+      <div id="anything-esle" class="section">
+        <div class="section-header">
           Anything else
         </div>
-        <div id="else-contents" class="contents">
+        <div class="contents">
           ‣ infp<br>
           ‣ i cannot drink coffee...<br>
           ‣ I like the lyrics of 'Cruel Summer'
@@ -66,5 +71,6 @@
       </div>
     </div>
   </main>
+  <script src="script2.js"></script>
 </body>
 </html>
