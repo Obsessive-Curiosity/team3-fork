@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: rgb(206, 206, 206);
+    font-size:14px;
+}
+
+#inputDiv {
+    margin-left: 50px;
+}
+#input {
+    width: 500px;
+}
+
+#command {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.id {
+    color: rgb(22, 173, 22);
+}
+
+.mingw {
+    color: rgb(161, 28, 179);
+}
+
+.path {
+    color: rgb(204, 179, 35);
+}
+
+.branch {
+    color: rgb(28, 161, 179);
+}
+
+#input {
+    background-color: rgb(0, 0, 0);
+    border-width: 0;
+    margin-bottom: 20px;
+    
+}
+
+#input:focus {
+    outline: none;
+}
+
+#submit {
+    background-color: white;
+    color:black;
+}
