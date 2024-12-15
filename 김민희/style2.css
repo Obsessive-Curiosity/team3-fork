@@ -49,112 +49,78 @@ header {
   font-family: 'Cafe24Nyangi-W-v1.0';
 }
 
-main {
+#main {
   display: flex;
   justify-content: center;
 }
 
-/* border-image-slice:
-95 95 95 95;
-border-image-width:
-10px 10px 10px 10px;
-border-image-outset:
-0px 0px 0px 0px;
-border-image-repeat:
-stretch stretch; */
-
-#main-wrap {
-  display: flex;
-  justify-content: center;
-  max-width: 1000px;
+#wrap {
+  box-sizing: border-box;
+  max-width: 800px;
+  min-width: 500px;
+  /* border: 2.5px solid black; */
+  /* border-radius: 12px; */
 }
 
-/* main-wrap */
-
-#profile-section {
-  width: 30%;
-  padding: 1%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-#right-section {
-  width: 70%;
-  padding: 1%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-/* profile-section */
-#profile-img {
+.section {
   box-sizing: border-box;
   width: 100%;
-  border: 2px solid transparent;
-  /* border-image: url('./img/border.jpeg') 95 / 10px / 1.5px round; */
-  border-radius: 20px;
+  border-bottom: 2.5px solid black;
 }
 
-#profile-wrap {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+#profile-header {
+  border-top: 2.5px solid black;
 }
 
-.proflie-contents {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  /* border-radius: 10px;
-  border: 2px solid black; */
-  /* border-image: url('./img/border.jpeg') 95 / 8px / 1.5px round; */
-}
-
-
-.profile-content {
+.section-header {
   box-sizing: border-box;
+  width: 100%;
+  border-bottom: 2.5px solid black;
+  padding: 10px;
+  font-family: 'Cafe24Nyangi-B-v1.0';
+  font-size: 3rem;
+}
+
+.contents {
   padding: 10px 20px;
-  /* border-radius: 10px;
-  border: 2px solid black; */
-  /* border-image: url('./img/border.jpeg') 95 / 8px / 1.5px round; */
-  font-size: 1.5rem;
-  font-family: 'insungitCutelivelyjisu';
-  letter-spacing: 2px;
-  z-index: 1;
-  overflow-wrap: anywhere;
-  line-height: 20px;
+  font-size: 2rem;
+  font-family: 'Ownglyph_ParkDaHyun';
+  letter-spacing: 3px;
+  line-height: 35px;
 }
 
-/* right-section */
-
-.right-contents {
+.text-content {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  border: 2.5px solid black;
-  /* border-image: url('./img/border.jpeg') 95 / 8px / 1.5px round; */
+}
+
+.label {
+  font-weight: 900;
+  width: 18%;
+}
+
+#portfolios {
+  display: grid;
+  grid-template:
+    1fr/
+    1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  place-items: center;
+}
+
+.portfolio {
+  font-family: 'Ownglyph_ParkDaHyun';
   border-radius: 20px;
-}
-
-.right-contents div {
-  border: none;
-  border-radius: 10px;
   background-color: black;
-  width: 100px;
-  height: 100px;
-  margin: 10px;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  aspect-ratio: 1 / 1;
+  font-size: 2rem;
+  padding: 20px;
+  max-width: 80px;
+  width: 100%;
+  text-align: center;
 }
 
-.right-contents span {
-  color: white;
-  text-align: center;
-  font-size: 1.8rem;
-  font-family: 'insungitCutelivelyjisu';
-}
