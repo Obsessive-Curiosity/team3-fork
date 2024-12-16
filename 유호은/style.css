@@ -6,6 +6,7 @@ body {
     background: #ffffff;
     font-family: pretendard;
     margin: 0;
+    padding-bottom: 50px;
 }
 
 #header {
@@ -25,6 +26,7 @@ body {
     font-size: 2.5rem;
     font-weight: 500;
     margin: 0;
+    cursor: pointer;
 }
 
 main {
@@ -50,8 +52,6 @@ main {
 }
 
 .card {
-    /* width: 100%; */
-    /* min-width: 1000px; */
     background-color: #fbfbfb;
     border-radius: 10px;
     padding: 10px;
@@ -60,11 +60,25 @@ main {
     gap: 10px;
 }
 
-.cardTop {
+.hidden {
+    display: none;
+}
+
+#show {
+    display: block;
+}
+
+.cardMid {
+    border-bottom: 1px solid #8B5DFF;
+}
+
+#infoBtn {
     color: #6A42C2;
     font-size: 2rem;
     font-weight: 400;
-    border-bottom: 1px solid #8B5DFF;
+    border: 1px solid #8B5DFF;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 .description {
@@ -103,4 +117,54 @@ main {
     padding: 10px;
     color: #1A1A1D;
     text-decoration: none;
+}
+
+footer {
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#inputBox {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+#commentInput {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #8B5DFF;
+    color: #563A9C;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#commentInput::placeholder {
+    color: #563A9C;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#commentBtn {
+    background-color: #FEF3E2;
+    width: 100px;
+    padding: 10px;
+    color: #563A9C;
+    font-size: 1rem;
+    font-weight: 800;
+    border-radius: 10px;
+    border: 1px solid #563A9C;
+}
+
+#commentContainer {
+    padding: 0 10px;
+}
+
+#myImg {
+    width: 100%;
+    height: auto;
+    display: none;
 }

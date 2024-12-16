@@ -1,0 +1,28 @@
+#name, #job {
+    cursor: pointer; /* 마우스를 올릴 때 클릭 가능 커서 표시 */
+    transition: color 0.3s ease; /* 색상 전환 효과 */
+    user-select: none; /* 텍스트 드래그 방지 */
+}
+
+#name:hover, #job:hover {
+    color: #555; /* 기본 텍스트보다 어두운 색으로 강조 */
+  text-decoration: underline; /* 마우스를 올리면 밑줄 표시 */
+}
+
+.zoom-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .magnifier {
+    position: absolute;
+    width: 100px; /* 돋보기 크기 */
+    height: 100px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    pointer-events: none; /* 돋보기가 이벤트를 가로채지 않도록 설정 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.5);
+    display: none; /* 기본적으로 숨김 */
+  }
