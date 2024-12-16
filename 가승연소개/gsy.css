@@ -3,14 +3,15 @@ body {
     margin: 0;
     padding: 20px;
     background-color: #f8f8f8;
+    font-size: 1.5rem;
 }
 h1, h2 {
     color: #222;
     font-weight: bold;
 }
 .profile-image {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid #fff;
@@ -23,6 +24,7 @@ h1, h2 {
 }
 .profile-info {
     margin-left: 30px;
+    display: none;
 }
 ul {
     list-style: none;
@@ -40,4 +42,32 @@ a:hover {
 }
 .emoji { 
     font-size: 1.2em;
+}
+
+.playlist {
+    display: none;
+}
+
+div.main {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;    
+    align-items: center;
+}
+
+
+.movie {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+.hobby {
+    display: none;
+}
+
+.tmi {
+    display: none;
 }
