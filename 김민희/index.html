@@ -3,69 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>저를 소개합니다 - 김민희</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>minhee</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 class="title">^･-･^੭</h1>
-  <main>
-    <section class="section">
-      <div class="section-title">😎 Profile</div>
-      <div class="wrap">
-        <div class="contents">
-          <div>
-            <h3 class="bold">Name</h3>
-            <hr>
-            <p>김민희</p>
-          </div>
-          <div>
-            <h3 class="bold">MBTI</h3>
-            <hr>
-            <p>INFP</p>
-          </div>
-          <div>
-            <h3 class="bold">Hobby</h3>
-            <hr>
-            <p>요즘에는 미드 프렌즈 정주행하고 있습니당</p>
-          </div>
+  <header>
+    <div id="title">
+      m i n h e e
+    </div>
+    <button id="mode-switch">
+      light mode
+    </button>
+  </header>
+  <main id="main">
+    <div id="wrap">
+      <div id="profile" class="section">
+        <div class="section-header">
+          profile
         </div>
         <div class="contents">
-          <div>
-            <h3 class="bold">Music I Love</h3>
-            <hr>
-            <p>Taylor Swift의<br> Cruel Summer</p>
+          <div id="name" class="text-content">
+            <div class="label">‣ name</div>
+            <div class="value"> kim minhee</div>
           </div>
-          <div>
-            <h3 class="bold">Movies I Love</h3>
-            <hr>
-            <p>인터스텔라, 곡성</p>
+          <div id="mail" class="text-content">
+            <span class="label">‣ mail </span>
+            <span>smnhree@gmail.com</span>
           </div>
-          <div>
-            <h3 class="bold">Foods I Love</h3>
-            <hr>
-            <p>샤브샤브</p>
+          <div id="blog" class="text-content">
+            <span class="label">‣ blog </span>
+            <a class="active" href="https://velog.io/@smnhree" target="_blank">miniverse.log</a>
           </div>
-          <div>
-            <h3 class="bold">Foods I Dislike</h3>
-            <hr>
-            <p>커피</p>
+          <div id="skill" class="text-content">
+            <span class="label">‣ skill </span>
+            <span>html, css, javascript</span>
           </div>
         </div>
       </div>
-    </section>
-    <section class="section">
-      <div class="section-title">💬 인사말</div>
-      <div class="wrap">
-        <div class="profile-contents">
-          <div>
-            <p>웹 개발 어렵지만 열심히 배워보겠습니다~~ 풀스택 5기 화이팅!</p>
-          </div>
+      <div id="portfolios" class="section">
+        <div class="section-header">
+          portfolio
+        </div>
+        <div class="contents">
+          <a class="portfolio active" href='https://panda-market-mhkim.netlify.app/' target="_blank">
+            <span>panda market</span>
+          </a>
+          <a class="portfolio">
+            <span>xx</span>
+          </a>
+          <a class="portfolio">
+            <span>xx</span>
+          </a>
+          <a class="portfolio">
+            <span>xx</span>
+          </a>
         </div>
       </div>
-    </section>
+      <div id="anything-esle" class="section">
+        <div class="section-header">
+          anything else
+        </div>
+        <div class="contents">
+          ‣ infp<br>
+          ‣ i cannot drink coffee...<br>
+          ‣ I like the lyrics of 'Cruel Summer'
+        </div>
+      </div>
+    </div>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
