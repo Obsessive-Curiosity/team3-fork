@@ -12,17 +12,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const myTmi = document.querySelector(".my-tmi");
   const tmi = document.querySelector(".tmi");
 
-  // visible 관련 함수
-  const setVisible = (element) => {
-    element.classList.add("visible");
-  };
-  const setHidden = (element) => {
-    element.classList.remove("visible");
+  // visible 토글 함수
+  const setVisibleToggle = (element) => {
+    element.classList.toggle("visible");
   };
 
   // [hover 대상 객체, hover할 때 visible 될 객체]
-  const hoverElements = [
-    [profileImg, profileInfo],
+  const hoverElements = [[profileImg, profileInfo]];
+
+  const clickElements = [
     [bestPlaylist, playList],
     [bestMovie, movie],
     [bestMenu, menu],
@@ -32,7 +30,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   hoverElements.forEach((element) => {
     const [hoverEl, infoEl] = element;
-    hoverEl.addEventListener("mouseover", setVisible(infoEl));
-    hoverEl.addEventListener("mouseout", setHidden(infoEl));
+    hoverEl.addEventListener("mouseover", () => setVisibleToggle(infoEl));
+    hoverEl.addEventListener("mouseout", () => setVisibleToggle(infoEl));
+  });
+
+  clickElements.forEach((element) => {
+    const [clickEl, infoEl] = element;
+
+    clickEl.addEventListener("click", () => setVisibleToggle(infoEl));
   });
 });
