@@ -12,49 +12,27 @@ document.addEventListener("DOMContentLoaded", function () {
   const myTmi = document.querySelector(".my-tmi");
   const tmi = document.querySelector(".tmi");
 
-  profileImg.addEventListener("mouseover", function () {
-    profileInfo.style.display = "block";
-  });
+  // visible 관련 함수
+  const setVisible = (element) => {
+    element.classList.add("visible");
+  };
+  const setHidden = (element) => {
+    element.classList.remove("visible");
+  };
 
-  profileImg.addEventListener("mouseout", function () {
-    profileInfo.style.display = "none";
-  });
+  // [hover 대상 객체, hover할 때 visible 될 객체]
+  const hoverElements = [
+    [profileImg, profileInfo],
+    [bestPlaylist, playList],
+    [bestMovie, movie],
+    [bestMenu, menu],
+    [bestHobby, hobby],
+    [myTmi, tmi],
+  ];
 
-  bestPlaylist.addEventListener("mouseenter", function () {
-    playlist.style.display = "block";
-  });
-
-  bestPlaylist.addEventListener("mouseleave", function () {
-    playlist.style.display = "none";
-  });
-
-  bestmovie.addEventListener("mouseover", function () {
-    movie.style.display = "block";
-  });
-
-  bestmovie.addEventListener("mouseout", function () {
-    movie.style.display = "none";
-  });
-
-  bestmenu.addEventListener("mouseover", function () {
-    menu.style.display = "block";
-  });
-
-  bestmenu.addEventListener("mouseout", function () {
-    menu.style.display = "none";
-  });
-  besthobby.addEventListener("mouseover", function () {
-    hobby.style.display = "block";
-  });
-
-  besthobby.addEventListener("mouseout", function () {
-    hobby.style.display = "none";
-  });
-  mytmi.addEventListener("mouseover", function () {
-    tmi.style.display = "block";
-  });
-
-  mytmi.addEventListener("mouseout", function () {
-    tmi.style.display = "none";
+  hoverElements.forEach((element) => {
+    const [hoverEl, infoEl] = element;
+    hoverEl.addEventListener("mouseover", setVisible(infoEl));
+    hoverEl.addEventListener("mouseout", setHidden(infoEl));
   });
 });
