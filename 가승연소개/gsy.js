@@ -1,61 +1,43 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const profileImg = document.querySelector(".profile-image");
-    const profileInfo = document.querySelector(".profile-info");
-    const bestPlaylist = document.querySelector(".best-playlist"); 
-    const playlist = document.querySelector(".playlist"); 
-    const bestmovie = document.querySelector(".best-movie"); 
-    const movie = document.querySelector(".movie"); 
-    const bestmenu = document.querySelector(".best-menu"); 
-    const menu = document.querySelector(".menu"); 
-    const besthobby = document.querySelector(".best-hobby"); 
-    const hobby = document.querySelector(".hobby"); 
-    const mytmi = document.querySelector(".my-tmi"); 
-    const tmi = document.querySelector(".tmi"); 
+// JS 변수 표기명으로 수정
+const profileImg = document.querySelector(".profile-image");
+const profileInfo = document.querySelector(".profile-info");
+const bestPlaylist = document.querySelector(".best-playlist");
+const playList = document.querySelector(".playlist");
+const bestMovie = document.querySelector(".best-movie");
+const movie = document.querySelector(".movie");
+const bestMenu = document.querySelector(".best-menu");
+const menu = document.querySelector(".menu");
+const bestHobby = document.querySelector(".best-hobby");
+const hobby = document.querySelector(".hobby");
+const myTmi = document.querySelector(".my-tmi");
+const tmi = document.querySelector(".tmi");
 
-    profileImg.addEventListener("mouseover", function() {
-        profileInfo.style.display = "block"; 
-    });
+// visible 토글 함수 추가
+const setVisibleToggle = (element) => {
+  element.classList.toggle("visible");
+};
 
-    profileImg.addEventListener("mouseout", function() {
-        profileInfo.style.display = "none";
-    });
+// [이벤트 대상 객체, 이벤트 작동시 visible 될 객체]
+const hoverElements = [[profileImg, profileInfo]]; // 미우스 hover 이벤트 객체 배열
+// 마우스 click 이벤트 객체 배열
+const clickElements = [
+  [bestPlaylist, playList],
+  [bestMovie, movie],
+  [bestMenu, menu],
+  [bestHobby, hobby],
+  [myTmi, tmi],
+];
 
-    bestPlaylist.addEventListener("mouseenter", function() {
-        playlist.style.display = "block"; 
-      });
-    
-    bestPlaylist.addEventListener("mouseleave", function() {
-        playlist.style.display = "none"; 
-      });
-
-    bestmovie.addEventListener("mouseover", function() {
-        movie.style.display = "block"; 
-    });
-
-    bestmovie.addEventListener("mouseout", function() {
-        movie.style.display = "none"; 
-    });
-    
-    bestmenu.addEventListener("mouseover", function() {
-        menu.style.display = "block"; 
-    });
-
-    bestmenu.addEventListener("mouseout", function() {
-        menu.style.display = "none"; 
-    });
-    besthobby.addEventListener("mouseover", function() {
-        hobby.style.display = "block"; 
-    });
-
-    besthobby.addEventListener("mouseout", function() {
-        hobby.style.display = "none"; 
-    });
-    mytmi.addEventListener("mouseover", function() {
-        tmi.style.display = "block"; 
-    });
-
-    mytmi.addEventListener("mouseout", function() {
-        tmi.style.display = "none"; 
-    });
+// hover 이벤트 함수
+hoverElements.forEach((element) => {
+  const [hoverEl, infoEl] = element;
+  hoverEl.addEventListener("mouseover", () => setVisibleToggle(infoEl));
+  hoverEl.addEventListener("mouseout", () => setVisibleToggle(infoEl));
 });
 
+// click 이벤트 함수
+clickElements.forEach((element) => {
+  const [clickEl, infoEl] = element;
+
+  clickEl.addEventListener("click", () => setVisibleToggle(infoEl));
+});
